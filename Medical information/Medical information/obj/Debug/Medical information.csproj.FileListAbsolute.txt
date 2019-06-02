@@ -1,0 +1,38 @@
+C:\Users\hsb41\source\repos\Medical information\Medical information\bin\Debug\Medical information.exe.config
+C:\Users\hsb41\source\repos\Medical information\Medical information\bin\Debug\Medical information.exe
+C:\Users\hsb41\source\repos\Medical information\Medical information\bin\Debug\Medical information.pdb
+C:\Users\hsb41\source\repos\Medical information\Medical information\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.csprojAssemblyReference.cache
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.Properties.Resources.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.csproj.GenerateResource.cache
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.csproj.CoreCompileInputs.cache
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.csproj.CopyComplete
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.exe
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical information.pdb
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.employees_form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.main_page_form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.employee_history_Form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.employee_salary_Form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.financial_statements_Form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.jobs_Form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.product_information_Form.resources
+C:\Users\hsb41\source\repos\Medical information\Medical information\obj\Debug\Medical_information.trading_record_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\bin\Debug\Medical information.exe.config
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\bin\Debug\Medical information.exe
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\bin\Debug\Medical information.pdb
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.csprojAssemblyReference.cache
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.employees_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.employee_history_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.employee_salary_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.financial_statements_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.jobs_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.main_page_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.product_information_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.Properties.Resources.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical_information.trading_record_Form.resources
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.csproj.GenerateResource.cache
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.csproj.CoreCompileInputs.cache
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.csproj.CopyComplete
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.exe
+C:\Users\hsb41\Desktop\SQL資料庫\Medical information\Medical information\obj\Debug\Medical information.pdb

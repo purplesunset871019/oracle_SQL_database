@@ -3,5 +3,5 @@ create table EMPLOYEES (EMPLOYEE_ID varchar2(3), EMPLOYEE_NAME varchar2(20), WOR
 create table PRODUCT_INFORMATION(COMMODITY_NAME nvarchar2(10),COMMODITY_ID varchar2(3),COMMODITY_PRICE number(6),COMMODITY_POSITION nvarchar2(10));
 create table EMPLOYEE_SALARY(EMPLOYEE_ID varchar2(3),SALARY number(6),ANNUAL_BONUS number(6));
 create table JOBS(JOB_ID varchar2(3),JOB_TITLE varchar2(10),MIN_SALARY number(6),MAX_SALARY number(6));
-create table JOB_HISTORY(EMPLOYEE_ID varchar2(3),START_DATE date,END_DATE date,JOB_ID varchar2(3));
+create table EMPLOYEE_HISTORY(EMPLOYEE_ID varchar2(3),START_DATE date,END_DATE date,JOB_ID varchar2(3));
 create table FINANCIAL_STATEMENTS(TOTAL_SALARY number(7),UTILITIES_COST number(5),COMMODITY_COST number(7),COMMODITY_INCOME number(7),MISCELLANEOUS_COST number(5));
