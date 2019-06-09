@@ -1,0 +1,12 @@
+C:\Users\hsb41\source\repos\database\database\obj\Debug\database.csprojAssemblyReference.cache
+C:\Users\hsb41\source\repos\database\database\obj\Debug\employees.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\employee_salary.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\financial_statements.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\jobs.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\MainWindow.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\employee_history.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\product_information.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\trading_record.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\App.g.cs
+C:\Users\hsb41\source\repos\database\database\obj\Debug\database_MarkupCompile.cache
+C:\Users\hsb41\source\repos\database\database\obj\Debug\database_MarkupCompile.lref

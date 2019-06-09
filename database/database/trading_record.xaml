@@ -1,0 +1,32 @@
+﻿<Window x:Class="database.trading_record"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:database"
+        mc:Ignorable="d"
+        Title="trading_record" Height="450" Width="800" Loaded="Window_Loaded_1">
+    <Grid>
+        <DataGrid x:Name="trading_record_DataGrid" HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396"/>
+        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
+        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="labe1" Content="commodity-id" HorizontalAlignment="Left" Margin="45,48,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe2" Content="purchase-date" HorizontalAlignment="Left" Margin="45,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.24,-0.78"/>
+        <Label x:Name="labe3" Content="manager-id" HorizontalAlignment="Left" Margin="45,108,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.71,-2.89"/>
+        <Label x:Name="labe4" Content="compodity-purchases" HorizontalAlignment="Left" Margin="45,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.506,-0.733"/>
+        <Label x:Name="labe5" Content="commodity-sales" HorizontalAlignment="Left" Margin="45,168,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe6" Content="commodity-inventory" HorizontalAlignment="Left" Margin="45,198,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe7" Content="commodity-exp" HorizontalAlignment="Left" Margin="45,228,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.046,0.739"/>
+        <TextBox x:Name="commodity_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,48,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="manager_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.19,0.874"/>
+        <TextBox x:Name="compodity_purchases_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,138,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="commodity_sales_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,168,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="commodity_inventory_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,198,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <GroupBox Header="information" HorizontalAlignment="Left" Height="241" Margin="428,35,0,0" VerticalAlignment="Top" Width="301"/>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="306,390,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker x:Name="purchase_date_picker" HorizontalAlignment="Left" Margin="192,78,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="commodity_exp_picker" HorizontalAlignment="Left" Margin="192,228,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
