@@ -34,7 +34,7 @@ namespace database
         private void updateDataGrid()
         {
             OracleCommand cmd = con.CreateCommand();
-            cmd.CommandText = "SELECT * FROM trading_record";
+            cmd.CommandText = "SELECT * FROM TRADING_RECORD";
             cmd.CommandType = CommandType.Text;
             OracleDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -59,31 +59,38 @@ namespace database
             this.updateDataGrid();
         }
 
-        private void Window_Loaded(object sender, EventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
             con.Close();
         }
 
-        private void Add_click(object sender, RoutedEventArgs e)
+        private void Add_btn_Click(object sender, RoutedEventArgs e)
         {
-            string sql = "insert into trading_record(commodity_id, purchase_date, manager_id, compodity_purchases, commodity_sales, commodity_inventory, commodity_exp) values (:commodity_id, :purchase_date, :manager_id, :compodity_purchases, :commodity_sales, :commodity_inventory, :commodity_exp)";
+            string sql = "insert into TRADING_RECORD(commodity_id, purchase_date, manager_id, compodity_purchases, commodity_sales, commodity_inventory, commodity_exp) values (:commodity_id, :purchase_date, :manager_id, :compodity_purchases, :commodity_sales, :commodity_inventory, :commodity_exp)";
             this.AUD(sql, 0);
             Update_btn.IsEnabled = true;
             Delete_btn.IsEnabled = true;
-
         }
 
-        private void Update_click(object sender, RoutedEventArgs e)
+        private void Update_btn_Click(object sender, RoutedEventArgs e)
         {
-            string sql = "update trading_record set commodity_id:commodity_id, purchase_date:purchase_date, manager_id:manager_id, compodity_purchases:compodity_purchases, commodity_sales:commodity_sales,commodity_inventory:commodity_inventory, commodity_exp:commodity_exp)";
+            string sql = "update TRADING_RECORD set  purchase_date=:purchase_date, manager_id=:manager_id, compodity_purchases=:compodity_purchases, commodity_sales=:commodity_sales,commodity_inventory=:commodity_inventory, commodity_exp=:commodity_exp)";
             this.AUD(sql, 1);
+            Update_btn.IsEnabled = true;
+            Delete_btn.IsEnabled = true;
         }
 
-        private void Delete_click(object sender, RoutedEventArgs e)
+        private void Delete_btn_Click(object sender, RoutedEventArgs e)
         {
-            string sql = "delete from trading_record WHERE commodity_id = :commodity_id";
+            string sql = "delete from TRADING_RECORD WHERE commodity_id = :commodity_id";
             this.AUD(sql, 2);
+            this.resetAll();
+            Update_btn.IsEnabled = true;
+            Delete_btn.IsEnabled = true;
         }
+
+
+
 
         private void resetAll()
         {
@@ -94,15 +101,12 @@ namespace database
             commodity_sales_txtbx.Text = "";
             commodity_inventory_txtbx.Text = "";
             commodity_exp_picker.SelectedDate = null;
-
-            Update_btn.IsEnabled = false;
-            Delete_btn.IsEnabled = false;
         }
-
-        private void Reset_click(object sender, RoutedEventArgs e)
+        private void Reset_btn_Click(object sender, RoutedEventArgs e)
         {
             this.resetAll();
         }
+
         private void AUD(String sql_stmt, int state)
         {
             String msg = "";
@@ -125,8 +129,8 @@ namespace database
                     break;
 
                 case 1:
-                    msg = "Row Inserted Successfully";
-                    cmd.Parameters.Add("commodity_id", OracleDbType.Varchar2, 3).Value = commodity_id_txtbx.Text;
+                    msg = "Row Update Successfully";
+
                     cmd.Parameters.Add("purchase_date", OracleDbType.Date).Value = purchase_date_picker.SelectedDate;
                     cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = Int32.Parse(manager_id_txtbx.Text);
                     cmd.Parameters.Add("compodity_purchases", OracleDbType.Int32, 3).Value = Int32.Parse(compodity_purchases_txtbx.Text);
@@ -134,6 +138,7 @@ namespace database
                     cmd.Parameters.Add("commodity_inventory", OracleDbType.Varchar2, 3).Value = commodity_inventory_txtbx.Text;
                     cmd.Parameters.Add("commodity_exp", OracleDbType.Date).Value = commodity_exp_picker.SelectedDate;
 
+                   // cmd.Parameters.Add("commodity_id", OracleDbType.Varchar2, 3).Value = commodity_id_txtbx.Text;
                     break;
 
                 case 2:
@@ -171,6 +176,13 @@ namespace database
                 Delete_btn.IsEnabled = true;
 
             }
+        }
+
+
+
+        private void Back_btn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -26,12 +26,7 @@ namespace database
     {
         public MainWindow()
         {
-            this.InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
+            InitializeComponent();
         }
 
         private void Employee_history_btn_Click(object sender, RoutedEventArgs e)
