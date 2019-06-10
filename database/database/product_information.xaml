@@ -5,20 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:database"
         mc:Ignorable="d"
-        Title="product_information" Height="450" Width="800">
+        Title="product_information" Height="450" Width="800" Loaded="Window_Loaded_1">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396"/>
-        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
-        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False"/>
-        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="labe1" Content="commodity_name" HorizontalAlignment="Left" Margin="104,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.166,-0.598"/>
-        <Label x:Name="labe2" Content="commodity_id" HorizontalAlignment="Left" Margin="104,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.565,1.209"/>
-        <Label x:Name="labe3" Content="Label" HorizontalAlignment="Left" Margin="104,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.165,-0.345"/>
-        <Label x:Name="labe4" Content="Label" HorizontalAlignment="Left" Margin="104,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.531,-0.637"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,78,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="234,259,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="316*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="product_information_DataGrid"  HorizontalAlignment="Left" Height="409" Margin="224.333,0,0,0" VerticalAlignment="Top" Width="396" Grid.Column="2" SelectionChanged="Product_information_DataGrid_SelectionChanged"/>
+        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" Click="Add_btn_Click_1"/>
+        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="3.333,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Grid.Column="2" Click="Update_btn_Click_1"/>
+        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="144.333,342,0,0" VerticalAlignment="Top" Width="75" IsEnabled="False" Grid.Column="2" Click="Delete_btn_Click_1"/>
+        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="3.333,390,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Click="Reset_btn_Click_1"/>
+        <Label x:Name="labe1" Content="commodity-name" HorizontalAlignment="Left" Margin="30,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.166,-0.598" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="labe2" Content="commodity-id" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.565,1.209" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="labe3" Content="comody-price" HorizontalAlignment="Left" Margin="30,200,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.165,-0.345" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="labe4" Content="comody-position" HorizontalAlignment="Left" Margin="30,259,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.531,-0.637" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="commodity_name_txtbx"  HorizontalAlignment="Left" Height="23" Margin="72.333,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="commodity_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="72.333,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="commodity_price_txtbx" HorizontalAlignment="Left" Height="23" Margin="72.333,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <TextBox x:Name="commodity_position_txtbx" HorizontalAlignment="Left" Height="23" Margin="72.333,259,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Column="2"/>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="144.333,390,0,0" VerticalAlignment="Top" Width="75" Click="Back_btn_Click" Grid.Column="2"/>
+        <GroupBox Header="Information" HorizontalAlignment="Left" Height="238" Margin="15,58,0,0" VerticalAlignment="Top" Width="278" Grid.Column="1" Grid.ColumnSpan="2"/>
+
     </Grid>
 </Window>
