@@ -59,7 +59,7 @@ namespace database
             this.updateDataGrid();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void Window_Closed_1(object sender, EventArgs e)
         {
             con.Close();
         }
@@ -120,7 +120,7 @@ namespace database
                     msg = "Row Inserted Successfully";
                     cmd.Parameters.Add("commodity_id", OracleDbType.Varchar2, 3).Value = commodity_id_txtbx.Text;
                     cmd.Parameters.Add("purchase_date", OracleDbType.Date).Value = purchase_date_picker.SelectedDate;
-                    cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = int.Parse(manager_id_txtbx.Text);
+                    cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = Int32.Parse(manager_id_txtbx.Text);
                     cmd.Parameters.Add("compodity_purchases", OracleDbType.Int32, 3).Value = Int32.Parse(compodity_purchases_txtbx.Text);
                     cmd.Parameters.Add("commodity_sales", OracleDbType.Int32, 3).Value = Int32.Parse(compodity_purchases_txtbx.Text);
                     cmd.Parameters.Add("commodity_inventory", OracleDbType.Varchar2, 3).Value = commodity_inventory_txtbx.Text;
@@ -132,7 +132,7 @@ namespace database
                     msg = "Row Update Successfully";
 
                     cmd.Parameters.Add("purchase_date", OracleDbType.Date).Value = purchase_date_picker.SelectedDate;
-                    cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = int.Parse(manager_id_txtbx.Text);
+                    cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = Int32.Parse(manager_id_txtbx.Text);
                     cmd.Parameters.Add("compodity_purchases", OracleDbType.Int32, 3).Value = Int32.Parse(compodity_purchases_txtbx.Text);
                     cmd.Parameters.Add("commodity_sales", OracleDbType.Int32, 3).Value = Int32.Parse(compodity_purchases_txtbx.Text);
                     cmd.Parameters.Add("commodity_inventory", OracleDbType.Varchar2, 3).Value = commodity_inventory_txtbx.Text;

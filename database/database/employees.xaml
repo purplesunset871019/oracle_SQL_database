@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:database"
         mc:Ignorable="d"
-        Title="employees" Height="450" Width="800">
+        Title="employees" Height="450" Width="800" Loaded="Window_Loaded" Closed="Window_Closed_1">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396"/>
-        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75"/>
+        <DataGrid x:Name="employees_DataGrid" HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396" SelectionChanged="Employees_DataGrid_SelectionChanged"/>
+        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75" Click="Add_btn_Click"/>
+        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75" Click="Update_btn_Click"/>
+        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75" Click="Delete_btn_Click"/>
+        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75" Click="Reset_btn_Click"/>
         <Label x:Name="labe1" Content="employee-id" HorizontalAlignment="Left" Margin="100,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.051,-0.39"/>
         <Label x:Name="labe2" Content="employee-name" HorizontalAlignment="Left" Margin="100,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.684,-0.819"/>
         <Label x:Name="labe3" Content="working-hour" HorizontalAlignment="Left" Margin="100,129,0,0" VerticalAlignment="Top"/>
@@ -28,6 +28,7 @@
         <TextBox x:Name="job_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="214,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="manager_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="214,279,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
         <DatePicker x:Name="hire_date_picker" HorizontalAlignment="Left" Margin="214,219,0,0" VerticalAlignment="Top"/>
-
+        <GroupBox Header="Information" HorizontalAlignment="Left" Height="278" Margin="75,40,0,0" VerticalAlignment="Top" Width="286"/>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="306,390,0,0" VerticalAlignment="Top" Width="75" Click="Back_btn_Click"/>
     </Grid>
 </Window>

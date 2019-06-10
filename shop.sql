@@ -4,6 +4,7 @@ create table PRODUCT_INFORMATION(COMMODITY_NAME nvarchar2(10),COMMODITY_ID varch
 create table EMPLOYEE_SALARY(EMPLOYEE_ID varchar2(3),SALARY number(6),ANNUAL_BONUS number(6));
 create table JOBS(JOB_ID varchar2(3),JOB_TITLE varchar2(10),MIN_SALARY number(6),MAX_SALARY number(6));
 create table EMPLOYEE_HISTORY(EMPLOYEE_ID varchar2(3),START_DATE date,END_DATE date,JOB_ID varchar2(3));
-create table FINANCIAL_STATEMENTS(TOTAL_SALARY number(7),UTILITIES_COST number(5),COMMODITY_COST number(7),COMMODITY_INCOME number(7),MISCELLANEOUS_COST number(5));
+create table FINANCIAL_STATEMENTS(manager_id number(3),TOTAL_SALARY number(7),UTILITIES_COST number(5),COMMODITY_COST number(7),COMMODITY_INCOME number(7),MISCELLANEOUS_COST number(5));
 insert into JOBS(JOB_ID,JOB_TITLE,MIN_SALARY,MAX_SALARY) values (1,1,1,1);
 select * from trading_record;
+drop table FINANCIAL_STATEMENTS;

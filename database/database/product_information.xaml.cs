@@ -61,7 +61,7 @@ namespace database
             this.updateDataGrid();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void Window_Closed_1(object sender, EventArgs e)
         {
             con.Close();
         }
@@ -187,10 +187,6 @@ namespace database
 
             }
         }
-
-       
-
-        
     }
 }
 

@@ -58,14 +58,14 @@ namespace database
             this.updateDataGrid();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        private void Window_Closed_1(object sender, EventArgs e)
         {
             con.Close();
         }
 
         private void Add_btn_Click_1(object sender, RoutedEventArgs e)
         {
-            string sql = "insert into financial_statements(manager_id, total_salary, utiltties_cost, commodity_cost, commodity_income, miscellaneous_cost) values (:manager_id, :total_salary, :utiltties_cost, :commodity_cost, :commodity_income, :miscellaneous_cost)";
+            string sql = "insert into financial_statements(manager_id, total_salary, utilities_cost, commodity_cost, commodity_income, miscellaneous_cost) values (:manager_id, :total_salary, :utilities_cost, :commodity_cost, :commodity_income, :miscellaneous_cost)";
             this.AUD(sql, 0);
             Update_btn.IsEnabled = true;
             Delete_btn.IsEnabled = true;
@@ -73,7 +73,7 @@ namespace database
 
         private void Update_btn_Click_1(object sender, RoutedEventArgs e)
         {
-            string sql = "update financial_statements set  total_salary = :total_salary, utiltties_cost = :utiltties_cost, commodity_cost = :commodity_cost commodity_income = :commodity_income, miscellaneous_cost = :miscellaneous_cost where manager_id = :manager_id";
+            string sql = "update financial_statements set total_salary = :total_salary, utilities_cost = :utilities_cost, commodity_cost = :commodity_cost, commodity_income = :commodity_income, miscellaneous_cost = :miscellaneous_cost where manager_id = :manager_id";
             this.AUD(sql, 1);
             Update_btn.IsEnabled = true;
             Delete_btn.IsEnabled = true;
@@ -97,7 +97,7 @@ namespace database
 
             manager_id_txtbx.Text = "";
             total_salary_txtbx.Text = "";
-            utiltties_cost_txtbx.Text = "";
+            utilities_cost_txtbx.Text = "";
             commodity_cost_txtbx.Text = "";
             commodity_income_txtbx.Text = "";
             miscellaneous_cost_txtbx.Text = "";
@@ -122,12 +122,10 @@ namespace database
                     
                     cmd.Parameters.Add("manager_id", OracleDbType.Int32, 3).Value = Int32.Parse(manager_id_txtbx.Text);
                     cmd.Parameters.Add("total_salary", OracleDbType.Int32, 7).Value = Int32.Parse(total_salary_txtbx.Text);
-                    cmd.Parameters.Add("utiltties_cost", OracleDbType.Int32, 5).Value = Int32.Parse(utiltties_cost_txtbx.Text);
+                    cmd.Parameters.Add("utilities_cost", OracleDbType.Int32, 5).Value = Int32.Parse(utilities_cost_txtbx.Text);
                     cmd.Parameters.Add("commodity_cost", OracleDbType.Int32, 7).Value = Int32.Parse(commodity_cost_txtbx.Text);
                     cmd.Parameters.Add("commodity_income", OracleDbType.Int32, 7).Value = Int32.Parse(commodity_income_txtbx.Text);
                     cmd.Parameters.Add("miscellaneous_cost", OracleDbType.Int32, 5).Value = Int32.Parse(miscellaneous_cost_txtbx.Text);
-
-
 
                     break;
 
@@ -135,7 +133,7 @@ namespace database
                     msg = "Row Update Successfully";
 
                     cmd.Parameters.Add("total_salary", OracleDbType.Int32, 7).Value = Int32.Parse(total_salary_txtbx.Text);
-                    cmd.Parameters.Add("utiltties_cost", OracleDbType.Int32, 5).Value = Int32.Parse(utiltties_cost_txtbx.Text);
+                    cmd.Parameters.Add("utilities_cost", OracleDbType.Int32, 5).Value = Int32.Parse(utilities_cost_txtbx.Text);
                     cmd.Parameters.Add("commodity_cost", OracleDbType.Int32, 7).Value = Int32.Parse(commodity_cost_txtbx.Text);
                     cmd.Parameters.Add("commodity_income", OracleDbType.Int32, 7).Value = Int32.Parse(commodity_income_txtbx.Text);
                     cmd.Parameters.Add("miscellaneous_cost", OracleDbType.Int32, 5).Value = Int32.Parse(miscellaneous_cost_txtbx.Text);
@@ -160,9 +158,6 @@ namespace database
             catch (Exception expe) { }
         }
 
-
-
-
         private void Back_btn_Click(object sender, RoutedEventArgs e)
         {
             MainWindow w11 = new MainWindow();
@@ -170,14 +165,7 @@ namespace database
             w11.Show();
         }
 
-
-
-
-
-
-      
-
-        private void Financial_statements_DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Financial_statements_DataGrid_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
             DataGrid dg = sender as DataGrid;
             DataRowView dr = dg.SelectedItem as DataRowView;
@@ -185,7 +173,7 @@ namespace database
             {
                 manager_id_txtbx.Text = dr["manager_id"].ToString();
                 total_salary_txtbx.Text = dr["total_salary"].ToString();
-                utiltties_cost_txtbx.Text = dr["utiltties_cost"].ToString();
+                utilities_cost_txtbx.Text = dr["utilities_cost"].ToString();
                 commodity_cost_txtbx.Text = dr["commodity_cost"].ToString();
                 commodity_income_txtbx.Text = dr["commodity_income"].ToString();
                 miscellaneous_cost_txtbx.Text = dr["miscellaneous_cost"].ToString();
@@ -195,7 +183,5 @@ namespace database
 
             }
         }
-
-       
     }
 }

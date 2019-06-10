@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:database"
         mc:Ignorable="d"
-        Title="employee_salary" Height="450" Width="800">
+        Title="employee_salary" Height="450" Width="800" Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
 
-        <DataGrid HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396"/>
-        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="90,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.798"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="90,153,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="90,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.409,-1.162"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="192,55,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="192,153,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="192,249,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-
+        <DataGrid x:Name="employee_salary_DataGrid" HorizontalAlignment="Left" Height="409" Margin="386,0,0,0" VerticalAlignment="Top" Width="396" SelectionChanged="Employee_salary_DataGrid_SelectionChanged"/>
+        <Button x:Name="Add_btn" Content="Add" HorizontalAlignment="Left" Margin="29,342,0,0" VerticalAlignment="Top" Width="75" Click="Add_btn_Click"/>
+        <Button x:Name="Update_btn" Content="Update" HorizontalAlignment="Left" Margin="165,342,0,0" VerticalAlignment="Top" Width="75" Click="Update_btn_Click"/>
+        <Button x:Name="Delete_btn" Content="Delete" HorizontalAlignment="Left" Margin="306,342,0,0" VerticalAlignment="Top" Width="75" Click="Delete_btn_Click"/>
+        <Button x:Name="Reset_btn" Content="Reset" HorizontalAlignment="Left" Margin="165,390,0,0" VerticalAlignment="Top" Width="75" Click="Reset_btn_Click"/>
+        <Label x:Name="labe1" Content="employee-id" HorizontalAlignment="Left" Margin="90,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.798"/>
+        <Label x:Name="labe2" Content="salary" HorizontalAlignment="Left" Margin="90,153,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe3" Content="annual-bonus" HorizontalAlignment="Left" Margin="90,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.409,-1.162"/>
+        <TextBox x:Name="employee_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,55,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="salary_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,153,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="annual_bonus_txtbx" HorizontalAlignment="Left" Height="23" Margin="192,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Back_btn" Content="Back" HorizontalAlignment="Left" Margin="306,390,0,0" VerticalAlignment="Top" Width="75" Click="Back_btn_Click"/>
+        <GroupBox Header="Information" HorizontalAlignment="Left" Height="269" Margin="79,26,0,0" VerticalAlignment="Top" Width="253"/>
     </Grid>
 </Window>

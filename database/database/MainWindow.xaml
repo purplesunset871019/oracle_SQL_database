@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label x:Name="labe1" Content="商店管理系統" HorizontalAlignment="Left" Margin="358,23,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labe2" Content="employee_history" HorizontalAlignment="Left" Margin="63,83,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labe3" Content="employee_salary" HorizontalAlignment="Left" Margin="249,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.983,-0.303"/>
+        <Label x:Name="labe2" Content="employee-history" HorizontalAlignment="Left" Margin="63,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe3" Content="employee-salary" HorizontalAlignment="Left" Margin="249,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.983,-0.303"/>
         <Label x:Name="labe4" Content="employees" HorizontalAlignment="Left" Margin="468,83,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labe5" Content="financial_statements" HorizontalAlignment="Left" Margin="607,83,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe5" Content="financial-statements" HorizontalAlignment="Left" Margin="607,83,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labe6" Content="jobs" HorizontalAlignment="Left" Margin="104,241,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labe7" Content="product_information" HorizontalAlignment="Left" Margin="237,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.14,0.537"/>
-        <Label x:Name="labe8" Content="trading_record" HorizontalAlignment="Left" Margin="468,241,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labe7" Content="product-information" HorizontalAlignment="Left" Margin="237,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.14,0.537"/>
+        <Label x:Name="labe8" Content="trading-record" HorizontalAlignment="Left" Margin="468,241,0,0" VerticalAlignment="Top"/>
 
         <Button x:Name="employee_history_btn" Content="Go" HorizontalAlignment="Left" Margin="79,151,0,0" VerticalAlignment="Top" Width="65" RenderTransformOrigin="0.175,0.505" Click="Employee_history_btn_Click"/>
         <Button x:Name="employee_salary_btn" Content="Go" HorizontalAlignment="Left" Margin="261,151,0,0" VerticalAlignment="Top" Width="75" Click="Employee_salary_btn_Click"/>
