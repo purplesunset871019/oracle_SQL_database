@@ -162,10 +162,10 @@ namespace database
             DataRowView dr = dg.SelectedItem as DataRowView;
             if (dr != null)
             {
-                employee_id_txtbx.Text = dr["commodity_id"].ToString();
-                start_date_picker.SelectedDate = DateTime.Parse(dr["purchase_date"].ToString());
-                end_date_picker.SelectedDate = DateTime.Parse(dr["commodity_exp"].ToString());
-                job_id_txtbx.Text = dr["manager_id"].ToString();
+                employee_id_txtbx.Text = dr["employee_id"].ToString();
+                start_date_picker.SelectedDate = DateTime.Parse(dr["start_date"].ToString());
+                end_date_picker.SelectedDate = DateTime.Parse(dr["end_date"].ToString());
+                job_id_txtbx.Text = dr["job_id"].ToString();
 
                 Update_btn.IsEnabled = true;
                 Delete_btn.IsEnabled = true;
